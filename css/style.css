@@ -205,7 +205,46 @@ ul {
     justify-content: space-between;
 }
 
-.logo,
+/* =========================================
+   LOGO
+========================================= */
+
+.logo {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    font-family: var(--font-title);
+
+    font-size: 1.6rem;
+    font-weight: 800;
+
+    letter-spacing: 0.02em;
+
+    color: var(--color-white);
+
+    text-transform: uppercase;
+}
+
+.logo img {
+    width: 42px;
+    height: 42px;
+
+    object-fit: contain;
+
+    flex-shrink: 0;
+}
+
+.logo span {
+    line-height: 1;
+}
+
+.logo span::after {
+    content: ".";
+
+    color: var(--color-neon);
+}
+
 .footer-logo {
     position: relative;
 
@@ -221,13 +260,11 @@ ul {
     text-transform: uppercase;
 }
 
-.logo::after,
 .footer-logo::after {
     content: ".";
 
     color: var(--color-neon);
 }
-
 .nav-menu {
     display: flex;
     align-items: center;
@@ -1700,8 +1737,14 @@ ul {
         top: 68px;
     }
 
+   .logo img {
+    width: 36px;
+    height: 36px;
+    }
+
     .logo {
-        font-size: 1.4rem;
+    gap: 8px;
+    font-size: 1.4rem;
     }
 
     .hero {
